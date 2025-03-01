@@ -45,64 +45,65 @@
             <h2>Apply for Loan by filling this form</h2>
             <form action="" method="POST" enctype="multipart/form-data">
               @csrf
-              
+          
               <!-- Personal Information -->
-              <h5 class="mb-3">Personal Information</h5>
+              <h5 class="mb-3 text-primary">Personal Information</h5>
               <div class="row">
                   <div class="col-md-6 mb-3">
-                      <label for="full_name">Full Name</label>
-                      <input type="text" class="form-control" id="full_name" name="full_name" required>
+                      <label for="full_name" class="form-label">Full Name</label>
+                      <input type="text" class="form-control" id="full_name" name="full_name" placeholder="Enter your full name" required>
                   </div>
                   <div class="col-md-6 mb-3">
-                      <label for="dob">Date of Birth</label>
+                      <label for="dob" class="form-label">Date of Birth</label>
                       <input type="date" class="form-control" id="dob" name="dob" required>
                   </div>
                   <div class="col-md-6 mb-3">
-                      <label for="identity_number">National ID/Passport</label>
-                      <input type="text" class="form-control" id="identity_number" name="identity_number" required>
+                      <label for="identity_number" class="form-label">National ID/Passport</label>
+                      <input type="text" class="form-control" id="identity_number" name="identity_number" placeholder="Enter your national ID or passport number" required>
                   </div>
                   <div class="col-md-6 mb-3">
-                      <label for="phone_number">Phone Number</label>
-                      <input type="tel" class="form-control" id="phone_number" name="phone_number" required>
+                      <label for="phone_number" class="form-label">Phone Number</label>
+                      <input type="tel" class="form-control" id="phone_number" name="phone_number" placeholder="Enter your phone number" required>
                   </div>
                   <div class="col-md-6 mb-3">
-                      <label for="email">Email Address</label>
-                      <input type="email" class="form-control" id="email" name="email" required>
+                      <label for="email" class="form-label">Email Address</label>
+                      <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
                   </div>
                   <div class="col-md-6 mb-3">
-                      <label for="address">Address</label>
-                      <input type="text" class="form-control" id="address" name="address" required>
+                      <label for="address" class="form-label">Address</label>
+                      <input type="text" class="form-control" id="address" name="address" placeholder="Enter your address" required>
                   </div>
               </div>
-
+          
               <!-- Employment & Income Details -->
-              <h5 class="mt-4">Employment & Income Details</h5>
+              <h5 class="mt-4 text-primary">Employment & Income Details</h5>
               <div class="row">
                   <div class="col-md-6 mb-3">
-                      <label for="employment_status">Employment Status</label>
-                      <select class="form-control" id="employment_status" name="employment_status" required>
-                          <option value="">Select</option>
+                      <label for="employment_status" class="form-label">Employment Status</label>
+                      <select class="form-select" id="employment_status" name="employment_status" required>
+                          <option value="">Select your employment status</option>
                           <option value="Employed">Employed</option>
                           <option value="Self-employed">Self-employed</option>
                           <option value="Unemployed">Unemployed</option>
                       </select>
                   </div>
                   <div class="col-md-6 mb-3">
-                      <label for="monthly_income">Monthly Income</label>
-                      <input type="number" class="form-control" id="monthly_income" name="monthly_income" required>
+                      <label for="monthly_income" class="form-label">Monthly Income</label>
+                      <input type="number" class="form-control" id="monthly_income" name="monthly_income" placeholder="Enter your monthly income" required>
                   </div>
               </div>
-
+          
               <!-- Loan Details -->
-              <h5 class="mt-4">Loan Details</h5>
+              <h5 class="mt-4 text-primary">Loan Details</h5>
               <div class="row">
                   <div class="col-md-6 mb-3">
-                      <label for="loan_amount">Loan Amount Requested</label>
-                      <input type="number" class="form-control" id="loan_amount" name="loan_amount" required>
+                      <label for="loan_amount" class="form-label">Loan Amount Requested</label>
+                      <input type="number" class="form-control" id="loan_amount" name="loan_amount" placeholder="Enter the loan amount" required>
                   </div>
                   <div class="col-md-6 mb-3">
-                      <label for="loan_purpose">Loan Purpose</label>
-                      <select class="form-control" id="loan_purpose" name="loan_purpose" required>
+                      <label for="loan_purpose" class="form-label">Loan Purpose</label>
+                      <select class="form-select" id="loan_purpose" name="loan_purpose" required>
+                          <option value="">Select the purpose of the loan</option>
                           <option value="Personal">Personal</option>
                           <option value="Business">Business</option>
                           <option value="Medical">Medical</option>
@@ -110,43 +111,43 @@
                       </select>
                   </div>
               </div>
-
+          
               <!-- Bank Details -->
-              <h5 class="mt-4">Bank & Financial Details</h5>
+              <h5 class="mt-4 text-primary">Bank & Financial Details</h5>
               <div class="row">
                   <div class="col-md-6 mb-3">
-                      <label for="bank_name">Bank Name</label>
-                      <input type="text" class="form-control" id="bank_name" name="bank_name" required>
+                      <label for="bank_name" class="form-label">Bank Name</label>
+                      <input type="text" class="form-control" id="bank_name" name="bank_name" placeholder="Enter your bank name" required>
                   </div>
                   <div class="col-md-6 mb-3">
-                      <label for="account_number">Account Number</label>
-                      <input type="text" class="form-control" id="account_number" name="account_number" required>
+                      <label for="account_number" class="form-label">Account Number</label>
+                      <input type="text" class="form-control" id="account_number" name="account_number" placeholder="Enter your account number" required>
                   </div>
                   <div class="col-md-6 mb-3">
-                      <label for="bank_statement">Upload Bank Statement (Optional)</label>
+                      <label for="bank_statement" class="form-label">Upload Bank Statement (Optional)</label>
                       <input type="file" class="form-control" id="bank_statement" name="bank_statement">
                   </div>
               </div>
-
+          
               <!-- Guarantor Details -->
-              <h5 class="mt-4">Guarantor Details (If Required)</h5>
+              <h5 class="mt-4 text-primary">Guarantor Details (If Required)</h5>
               <div class="row">
                   <div class="col-md-6 mb-3">
-                      <label for="guarantor_name">Guarantor Name</label>
-                      <input type="text" class="form-control" id="guarantor_name" name="guarantor_name">
+                      <label for="guarantor_name" class="form-label">Guarantor Name</label>
+                      <input type="text" class="form-control" id="guarantor_name" name="guarantor_name" placeholder="Enter guarantor's name">
                   </div>
                   <div class="col-md-6 mb-3">
-                      <label for="guarantor_contact">Guarantor Contact</label>
-                      <input type="tel" class="form-control" id="guarantor_contact" name="guarantor_contact">
+                      <label for="guarantor_contact" class="form-label">Guarantor Contact</label>
+                      <input type="tel" class="form-control" id="guarantor_contact" name="guarantor_contact" placeholder="Enter guarantor's contact">
                   </div>
               </div>
-
+          
               <!-- Agreement -->
               <div class="form-check mt-3">
                   <input type="checkbox" class="form-check-input" id="agree_terms" name="agree_terms" required>
-                  <label class="form-check-label" for="agree_terms">I agree to the <a href="#">terms and conditions</a></label>
+                  <label class="form-check-label" for="agree_terms">I agree to the <a href="#" class="text-decoration-none">terms and conditions</a></label>
               </div>
-
+          
               <!-- Submit Button -->
               <div class="text-center mt-4">
                   <button type="submit" class="btn btn-success w-50">Submit Application</button>
