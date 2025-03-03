@@ -231,7 +231,7 @@
             </div>
             <div class="row text-center">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website <script>document.write(new Date().getFullYear())</script></span>
+                    <span class="copyright">Copyright &copy; Dusburg Loans <script>document.write(new Date().getFullYear())</script></span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
