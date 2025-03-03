@@ -113,40 +113,51 @@
               </div>
           
               <!-- Bank Details -->
-              <h5 class="mt-4 text-primary">Bank & Financial Details</h5>
+              <h5 class="mt-4 text-primary">Payment Details</h5>
               <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="bank_name" class="form-label">Provider</label>
+                    <select class="form-control" id="bank_name" name="bank_name" required>
+                        <option value="" disabled selected>Select payment method</option>
+                        <option value="mpesa">Mpesa</option>
+                        <option value="ecocash">Ecocash</option>
+                    </select>
+                </div>                
                   <div class="col-md-6 mb-3">
-                      <label for="bank_name" class="form-label">Bank Name</label>
-                      <input type="text" class="form-control" id="bank_name" name="bank_name" placeholder="Enter your bank name" required>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                      <label for="account_number" class="form-label">Account Number</label>
+                      <label for="account_number" class="form-label">Mobile Number</label>
                       <input type="text" class="form-control" id="account_number" name="account_number" placeholder="Enter your account number" required>
                   </div>
                   <div class="col-md-6 mb-3">
-                      <label for="bank_statement" class="form-label">Upload Bank Statement (Optional)</label>
+                      <label for="bank_statement" class="form-label">Upload National ID or Passport</label>
                       <input type="file" class="form-control" id="bank_statement" name="bank_statement">
                   </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="bank_statement" class="form-label">3 Months Bank Statement</label>
+                    <input type="file" class="form-control" id="bank_statement" name="bank_statement">
+                </div>
               </div>
           
               <!-- Guarantor Details -->
-              <h5 class="mt-4 text-primary">Guarantor Details (If Required)</h5>
+              <h5 class="mt-4 text-primary">Desired Payment Duration</h5>
               <div class="row">
-                  <div class="col-md-6 mb-3">
-                      <label for="guarantor_name" class="form-label">Guarantor Name</label>
-                      <input type="text" class="form-control" id="guarantor_name" name="guarantor_name" placeholder="Enter guarantor's name">
-                  </div>
-                  <div class="col-md-6 mb-3">
-                      <label for="guarantor_contact" class="form-label">Guarantor Contact</label>
-                      <input type="tel" class="form-control" id="guarantor_contact" name="guarantor_contact" placeholder="Enter guarantor's contact">
-                  </div>
+                <div class="col-md-6 mb-3">
+                    <select class="form-control" id="payment_duration" name="payment_duration" required>
+                        <option value="" disabled selected>Select payment duration</option>
+                        <option value="6_months">1 week</option>
+                        <option value="12_months">2 weeks</option>
+                        <option value="18_months">1 Month</option>
+                        <option value="24_months">3 Months</option>
+                    </select>
+                 </div>
               </div>
           
               <!-- Agreement -->
-              <div class="form-check mt-3">
-                  <input type="checkbox" class="form-check-input" id="agree_terms" name="agree_terms" required>
-                  <label class="form-check-label" for="agree_terms">I agree to the <a href="#" class="text-decoration-none">terms and conditions</a></label>
-              </div>
+              <div class="form-check mt-3 text-start">
+                <input type="checkbox" class="form-check-input" id="agree_terms" name="agree_terms" required>
+                <label class="form-check-label ms-2" for="agree_terms">
+                    I agree to the <a href="#" class="text-decoration-none">terms and conditions</a>
+                </label>
+            </div>            
           
               <!-- Submit Button -->
               <div class="text-center mt-4">

@@ -25,7 +25,18 @@
     font-size: 14px;
     font-weight: 'normal';
 }
-
+        .loader {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #10111e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 99999;
+        }
     </style>
 </head>
 <body>
@@ -36,6 +47,9 @@
         @yield('header')
     </div>
     <div class="">
+        <div class="loader">
+            <img src="{{ asset('images/tail-spin.svg') }}" />
+        </div>
         @yield('content')
     </div>
 
