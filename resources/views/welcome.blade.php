@@ -32,15 +32,15 @@
             <div class="col-md-6 text-center text-md-start"> <!-- Centered text on smaller devices -->
                 <h4>Get Your Loan Online Today!</h4>
                 <p>Quick and hassle-free online loans—fast approvals, flexible repayments, and funds when you need them most!.</p>
-                <div class="d-flex justify-content-center justify-content-md-start"> <!-- Centered button on smaller devices -->
-                    <button type="button" class="btn btn-outline-primary">Apply for loan</button>
-                </div>
+                <div class="d-flex justify-content-center justify-content-md-start"> 
+                    <a href="#loan" class="btn btn-outline-primary">Apply for loan</a>
+                </div>                
             </div>
         </div>
     </div>
 
     <!-- Testimonials Section -->
-    <div class="container-fluid py-5" id="testi">
+    <div class="container-fluid py-5" id="loan">
         <div class="row text-center">
             <h2>Apply for Loan by filling this form</h2>
             <form action="" method="POST" enctype="multipart/form-data">
