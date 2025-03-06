@@ -2,7 +2,10 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Loans</a>
+            <a class="navbar-brand" href="#">
+                <img src="{{ asset('assets/images/logo.png') }}" alt="Loans Logo" height="60">
+              </a>
+              
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -26,7 +29,17 @@
     <div class="container-fluid py-5" id="hero-sec">
         <div class="row align-items-center">
             <div class="col-md-6 mb-4 mb-md-0"> <!-- Added margin-bottom for spacing on smaller devices -->
-              <img src="{{ asset('assets/images/loan-man.jpg') }}" class="img-fluid" alt="Loan Man">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="{{ asset('assets/images/advert.jpeg') }}" class="img-fluid" alt="Loan image">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="{{ asset('assets/images/ad.jpeg') }}" class="img-fluid" alt="Loan image">
+                      </div>
+                    </div>
+                  </div>
+            
 
             </div>
             <div class="col-md-6 text-center text-md-start"> <!-- Centered text on smaller devices -->
@@ -231,7 +244,7 @@
             </div>
             <div class="row text-center">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Dusburg Loans <script>document.write(new Date().getFullYear())</script></span>
+                    <span class="copyright">Copyright &copy; Dubsburg Loans <script>document.write(new Date().getFullYear())</script></span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
