@@ -43,18 +43,32 @@
 
             </div>
             <div class="col-md-6 text-center text-md-start"> <!-- Centered text on smaller devices -->
-                <h4>Get Your Loan Online Today!</h4>
-                <p>Quick and hassle-free online loans—fast approvals, flexible repayments, and funds when you need them most!.</p>
-                <div class="d-flex justify-content-center justify-content-md-start"> 
-                    <a href="#loan" class="btn btn-outline-primary">Apply for loan</a>
+                <h4>Get Your Loan Today, Visit our Offices!</h4>
+                <p>Quick and hassle-free loans—fast approvals, flexible repayments, and funds when you need them most!.</p>
+                <div class="d-flex justify-content-center justify-content-md-start mt-2"> 
+                    <a href="#aboutUs" class="btn btn-outline-primary">About Us</a>
                 </div>                
             </div>
         </div>
     </div>
 
-    <!-- Testimonials Section -->
-   <livewire:loans.apply-for-loan/>
-
+    <!-- About Us -->
+    <section id="aboutUs" class="mb-5">
+        <p>
+            At <strong>Dubsburg Loans</strong>, we are a dedicated team of finance and technology professionals committed to revolutionizing the way people access financial support. 
+            With a passion for financial inclusion and innovation, we aim to simplify the borrowing process, making it faster, more transparent, and more accessible for everyone — whether you're an entrepreneur, student, or working professional.
+        </p>
+        <p>
+            Our team combines deep expertise in lending, data analytics, risk management, and customer service to provide a seamless digital loan experience. 
+            We believe that everyone deserves the opportunity to grow, and we work tirelessly to ensure that our platform meets the highest standards of reliability, security, and user satisfaction.
+        </p>
+        <p>
+            Since our inception, we've helped thousands of individuals achieve their financial goals, and we continue to grow our services with a strong focus on innovation, trust, and community empowerment.
+            Join us on our mission to create a more financially inclusive future.
+        </p>
+    </section>
+    
+    <!-- End About Us -->
     <!-- Footer -->
     <footer class="footer-container bg-dark text-white py-5">
         <div class="container-fluid">
@@ -62,37 +76,15 @@
                 <div class="col-md-4 footer-column">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <span class="footer-title">Product</span>
+                            <span class="footer-title">Our Products</span>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Product 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Product 2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Plans & Prices</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Frequently asked questions</a>
+                            <a class="nav-link" href="https://www.linbets.com/en/">Linbets</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-4 footer-column">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <span class="footer-title">Company</span>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Job postings</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">News and articles</a>
-                        </li>
-                    </ul>
+                   
                 </div>
                 <div class="col-md-4 footer-column">
                     <ul class="nav flex-column">

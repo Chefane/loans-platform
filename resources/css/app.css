@@ -1,3 +1,63 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.stats-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}
+.stats-card h4 {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+}
+.stats-card .icon {
+    font-size: 2.5rem;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+}
+.stats-card .percentage {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.bg-traffic { background-color: #f05454; }
+.bg-users { background-color: #f5a623; }
+.bg-sales { background-color: #23c4f5; }
+.positive { color: #28a745; }
+.negative { color: #dc3545; }
+
+.form-select{
+    border-radius: 7px;
+    height: 38px;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+  }
+
+  
+  .profile-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+.profile-icon {
+    font-size: 2rem;
+}
+.profile-name {
+    font-weight: bold;
+}
+.profile-number {
+    font-size: 0.9rem;
+    color: #666;
+}
